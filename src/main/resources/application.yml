@@ -1,0 +1,12 @@
+server:
+  port: 9296
+  
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bnvsk2471/Spring-app-config.git
+          clone-on-start: true #when application is started it will fetch properties from GIT
